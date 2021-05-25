@@ -1,0 +1,24 @@
+<!--pages/storageConsole/storageConsole.wxml-->
+<view class="container">
+
+  <view class="list">
+    <view class="list-item" bindtap="testCgi">
+      <text class="black">AI渲染成功</text>
+    </view>
+    
+
+    <view class="list-item">
+      <image class="image1" src="{{imagePath}}" mode="aspectFit" bindtap='previewImage1'></image>
+    </view>
+
+    <view class="list-item">
+      <image class="image1" src="{{url_rsp}}" mode="aspectFit" bindtap='previewImage2'></image>
+    </view>
+
+  </view>
+</view>
+<text style="position:relative;">满意吗？可返回上一页重新上传头像！</text>
+
+
+
+
