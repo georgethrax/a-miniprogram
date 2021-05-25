@@ -26,6 +26,32 @@ Page({
       })
     }
   },
+  previewImage:function(path){
+    var that = this;
+    console.log('that', that)
+    console.log('previewImage.path', path)
+    wx.getImageInfo({
+      src: path,
+      success (res) {
+        console.log(res.width)
+        console.log(res.height)
+        console.log(res.path)
+        wx.previewImage({
+          // current: res.path//当前显示图片的http链接 
+          urls: [path], //要预览的图片
+        })
+      }
+    })
+  },
+
+  previewImage1:function(e){
+    console.log('previewImage1')
+    this.previewImage('cloud://tcbc-dev-1gin1f3b2d4d3015.7463-tcbc-dev-1gin1f3b2d4d3015-1305897839/emma.jpg')
+  },
+  previewImage2:function(e){
+    console.log('previewImage2')
+    this.previewImage('cloud://tcbc-dev-1gin1f3b2d4d3015.7463-tcbc-dev-1gin1f3b2d4d3015-1305897839/emma-t.jpg')
+  },
 
   getUserProfile() {
     // 推荐使用wx.getUserProfile获取用户信息，开发者每次通过该接口获取用户个人信息均需用户确认，开发者妥善保管用户快速填写的头像昵称，避免重复弹窗

@@ -38,7 +38,7 @@ Page({
 
   previewImage1:function(e){
     console.log('previewImage1')
-    this.previewImage(this.data.imagePath)
+    this.previewImage(this.data.tempFileURL)
   },
   previewImage2:function(e){
     console.log('previewImage2')

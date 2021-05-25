@@ -34,13 +34,15 @@
     </view>
   </view>
   -->
+  <view class="list-item">
+    <image class="image1" src="../../images/emma.jpg" mode="aspectFit" bindtap='previewImage1' style="height: 385rpx; width: 750rpx; display: inline-block; box-sizing: border-box; left: NaNrpx; top: NaNrpx"></image>
+  </view>
+  <view class="list-item">
+    <image class="image1" src="../../images/emma-t.jpg" mode="aspectFit" bindtap='previewImage2' style="width: 750rpx; height: 385rpx; display: inline-block; box-sizing: border-box; left: NaNrpx; top: NaNrpx"></image>
+  </view>
 
   <view class="list-item">
-      <image class="image1" src="../../images/emma-t.jpg" mode="aspectFit" bindtap='previewImage2'></image>
-  </view>
-  
-  <view class="list-item">
-    <text style="position:relative;">感兴趣吗？点击下方按钮上传你的头像！</text>
+    <text style="position: relative; left: -3rpx; top: 33rpx">感兴趣吗？点击下方按钮上传你的头像！</text>
   </view>
 
 
@@ -53,9 +55,6 @@
       <image class="uploader-image" src="{{imgUrl}}" mode="aspectFit" bindtap="previewImg"></image>
     </view>
   </view>
-
-
-  
 
 
 </view>
